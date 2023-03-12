@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  api:
+    build:
+      context: .
+    container_name: DISCOVERY_SERVER
+    ports:
+      - '8761:8761'
+    restart: unless-stopped
